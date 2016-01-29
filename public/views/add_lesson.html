@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+        <script src="/util/util.js"></script>
+        <script src="/js/add_lesson.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">E-Learning System</a>
+            </div>
+            <div>
+              <ul class="nav navbar-nav">
+                <li><a href="/home">Home</a></li>
+                <li class="active"><a href="/all_classes">Classes</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="container">
+          <div class='info_message'>
+
+          </div>
+            <div id="classes_list" class="row">
+                <div class="col-md-9">
+                    <form>
+                        <h2>Add Lesson For Class </h2>
+                        Lesson Number
+                        <input id="lesson_no" type="text" class="form-control">
+                        <br>
+                        Lesson Title
+                        <input id="lesson_title" type="text" class="form-control">
+                        <br>
+                        Lesson Body<br>
+                        <textarea id="lesson_body" rows="4" cols="100"></textarea>
+                        <br>
+                        <button id="id_submit" type="button">Submit</button>
+                    </form>
+                </div>
+                <div id='if_already_user' class="col-md-3">
+                    <h4>Welcome Back </h4>
+                    <div>
+                        <a href="/all_classes">My Classes</a>
+                        <br>
+                        <a href="/logout">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+              <p>Copyright by MMS</p>
+
+        </footer>
+    </body>
+</html>

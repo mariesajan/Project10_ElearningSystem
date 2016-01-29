@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+        <script src="/util/util.js"></script>
+        <script src="/js/classes.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">E-Learning System</a>
+            </div>
+            <div>
+              <ul id="id_links" class="nav navbar-nav">
+                <li><a id="link_login" href="/">Login</a></li>
+                <li><a id="link_home" href='/home'>Home</a></li>
+                <li class="active"><a href="/all_classes">Classes</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="container">
+          <div class="info_message">
+
+          </div>
+            <div id="classes_list" class="row">
+                <div class="col-md-9">
+                    <h4>Classes</h4>
+                    <div id="id_allClasses">
+
+                    </div>
+                </div>
+                <div id='if_already_user' class="col-md-3">
+                    <h4>Welcome Back </h4>
+                    <div>
+                        <a id="link_add_class" href='/add_class'>Add Class</a>
+                        <br>
+                        <a href="/logout">Logout</a>
+                    </div>
+                </div>
+
+                <div id= "id_div_login" class="col-md-3">
+                    <h3>Instructor and Student Login</h3>
+                    <div class="error">
+
+                    </div>
+                    <form>
+                      Username: <br>
+                      <input type="text" id="username">
+                      <br>
+                      Password: <br>
+                      <input type="password" id="password">
+                      <br>
+
+                      <button type="button" id="btn_login">LogIn</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+              <p>Copyright by MMS</p>
+
+        </footer>
+    </body>
+</html>

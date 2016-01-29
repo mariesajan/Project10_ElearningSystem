@@ -1,0 +1,24 @@
+.box-border{
+    height:150px;
+    width:380px;
+}
+
+.box-border-allclass{
+    padding:5px;
+    border-style: ridge;
+}
+
+footer {
+    text-align: center;
+    margin:20px;
+}
+
+.error{
+    color:red;
+}
+
+.info_message{
+    color:blue;
+    padding:10px;
+    background-color: #e0e0d1;
+}
