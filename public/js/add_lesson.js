@@ -24,16 +24,13 @@ $(document).ready(function() {
         var lesson_body = $('#lesson_body').val();
 
         if(lesson_no != '' && lesson_title != '' && lesson_body != ''){
-          console.log('if part....');
           if(isNaN(lesson_no) ==  true){
             //if lesson number is not a decimal
-            console.log('lesson number is not a decimal....');
             var html  = '<p> Enter a number in the Lesson Number field. </p>';
             $('.info_message').html(html);
             return false;
           }else{
             //if lesson number is a decimal
-            console.log('lesson number is a decimal....');
             $.ajax({
                 url: '/add_lesson',
                 method: 'POST',
@@ -57,7 +54,6 @@ $(document).ready(function() {
             });
           }
         }else{
-          console.log('Enter the mandatory fields..');
           var html = '<p>Enter the mandatory fields.</p>';
           $('.info_message').show();
           $('.info_message').html(html);

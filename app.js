@@ -148,7 +148,13 @@ app.post('/admin/add_class', function(req, res, next) {
     var hashValue = "classes:" + req.body.class_name;
     db.hset(hashValue, 'class_description',
         req.body.class_description).then(function(hash){
-          res.send(hash);
+          console.log('hash value is...',hash);
+          if(hash == 1){
+            data = 'new_data';
+          }else{
+            data = 'existing_data';
+          }
+          res.send(data);
         });
 });
 

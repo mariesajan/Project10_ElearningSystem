@@ -14,23 +14,19 @@ $(document).ready(function() {
         var confirm_password = $("#confirm_password").val();
 
         if(email.length == 0 || username.length == 0 || first_name.length == 0 || last_name.length == 0){
-            console.log('Enter the mandatory fields...');
             var html = '<p>Enter the mandatory fields </p>';
             $('.info_message').html(html);
             return false;
         }
         if(password.length > 0){
-          console.log('pwd not nul...');
           if(password != confirm_password){
             // passwords are not equal
-            console.log('pawds.... nopt equal');
             var html = '<p>Passwords doesnt match. Please try again.</p>';
             $('.info_message').show();
             $(".info_message").html(html);
             return false;
           }
         }else{
-          console.log('pwd field is null');
           var html = '<p> Enter the password field </p>'
           $('.info_message').show();
           $(".info_message").html(html);

@@ -27,16 +27,20 @@ $(document).ready(function() {
                 class_description: class_description
             },
             success: function fn_success_addclass(data) {
+              console.log('in fn_success_addclass...........');
+              console.log(data);
                 $('#class_name').val('');
                 $('#class_description').val('');
                 var html = '';
 
-                if (data == 1) {
+                if (data == 'new_data') {
+                  console.log('added....');
                   html = '<p>Class '+class_name +' added successfully<p>';
-                }else if(data == 0){
+                }else if(data == 'existing_data'){
+                  console.log('updated....');
                   html = '<p>Class '+class_name +' updated successfully<p>';
                 }
-                
+
                 $('.info_message').show();
                 $('.info_message').html(html);
             }
