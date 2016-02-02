@@ -11,9 +11,14 @@ To start attending for each class, the student has to register by clicking the *
 You need to run the below command to install all the dependencies specified in the **package.json**  file
 >  npm install
 
-After that, start the server by executing the command
+After that, start the redis server and client.
+
+Then, start the server by executing the command
 > nodemon app.js
 
-Then listen to the server at port 3000
+Finally, listen to the server at port 3000
 
 _Database used here is Redis_
+
+
+If you come across the error _**'Redis connection to 127.0.0.1:6379 failed - read ECONNRESET'**_, then your connection to redis is failing. In this case, you need to restart the _redis server_ and then start up the _redis client_ again.
