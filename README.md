@@ -27,6 +27,6 @@ Instructors can add lessons/classes on various topics.
 
 ### Troublshooting
 
-**Getting error `Redis connection to 127.0.0.1:6379 failed - read ECONNRESET` **
+#### Getting error `Redis connection to 127.0.0.1:6379 failed - read ECONNRESET` **
 
 Restart redis server and client if you get error:
