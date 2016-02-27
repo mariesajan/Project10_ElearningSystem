@@ -1,24 +1,32 @@
 # E-learning System
 
-In this e-learning system, the users are
-  * instructors and
-  * students.
+Example app done as part of learning **Redis**.
 
-All users have to register in the website to start getting the services. This system allows users to join for different classes added by the instructors. Instructors can add different lessons for each classes.
+Students have to register to attend classes.
 
-To start attending for each class, the student has to register by clicking the **Register** button
-
-You need to run the below command to install all the dependencies specified in the **package.json**  file
->  npm install
-
-After that, start the redis server and client.
-
-Then, start the server by executing the command
-> nodemon app.js
-
-Finally, listen to the server at port 3000
-
-_Database used here is Redis_
+Instructors can add lessons/classes on various topics.
 
 
-If you come across the error _**'Redis connection to 127.0.0.1:6379 failed - read ECONNRESET'**_, then your connection to redis is failing. In this case, you need to restart the _redis server_ and then start up the _redis client_ again.
+### Installation
+
+1. Install Redis.
+
+2.  Install dependencies.
+    ```
+    npm install
+    ```
+
+3.  Start redis server and client.
+
+4.  Start server.
+    ```
+    nodemon app.js
+    ```
+5. Open [http://localhost:3000](http://localhost:3000)
+
+
+### Troublshooting
+
+**Getting error `Redis connection to 127.0.0.1:6379 failed - read ECONNRESET` **
+
+Restart redis server and client if you get error:
