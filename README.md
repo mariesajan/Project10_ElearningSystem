@@ -1,6 +1,6 @@
 # E-learning System
 
-Example app done as part of learning **Redis**.
+Example app done as part of learning **node and redis**.
 
 Students have to register to attend classes.
 
@@ -29,4 +29,4 @@ Instructors can add lessons/classes on various topics.
 
 * **Getting error** `Redis connection to 127.0.0.1:6379 failed - read ECONNRESET`
 
-  Restart redis server and client 
+  Restart redis server and client
